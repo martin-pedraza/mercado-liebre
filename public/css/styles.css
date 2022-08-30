@@ -1,0 +1,111 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    background-color: #ebebeb;
+}
+
+header {
+    background-color: #EAC926;
+    font-size: 12px;
+    padding: 8px;
+}
+
+nav {
+    padding: 0%;
+    display: none;
+}
+
+main {
+    width: 90%;
+    margin: auto;
+}
+
+footer {
+    text-align: center;
+    padding-top: 30px;
+}
+
+header div{
+    margin: 10px 0px;
+}
+
+h2 {
+    font-size: 12px;
+    text-align: center;
+    font-weight: normal;
+}
+
+ul {
+    list-style: none;
+    padding: 0px;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+h3 {
+    font-size: 24px;
+    color: #666;
+}
+
+.burger-menu {
+    background-color: #1259c3;
+    color: white;
+    display: block;
+    max-width: 45px;
+    padding: 15px 0px;
+    border-radius: 5px;
+    text-align: center;
+    margin: auto;
+}
+
+.precio {
+    font-size: 18px;
+    margin: 0px;
+}
+
+.imagenTarjeta {
+    width: 224px;
+    height: 224px;
+}
+
+.tarjeta-texto {
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+}
+
+.tarjeta {
+    width: 224px;
+    height: 360px;
+    margin: 5px auto;
+    background-color: white;
+}
+
+.descuento {
+    color: #39b54a;
+    font-size: 16px;
+    margin: 0px;
+}
+
+.producto {
+    color: #666;
+    font-size: 16px;
+    margin: 10px 0px;
+}
+
+.fa-truck {
+    color: #39b54a;
+}
+
+.img-footer {
+    width: 2em;
+    margin-bottom: 10px;
+    color: #1259c3;;
+}
+
+#logo {
+    width: 134px;
+    height: 34px;
+}
