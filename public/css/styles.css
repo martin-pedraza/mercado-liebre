@@ -9,52 +9,68 @@ body {
     background-color: #ebebeb;
 }
 
+/*Etiquetas header*/
 header {
     background-color: #EAC926;
     font-size: 12px;
     padding: 8px;
 }
 
-nav {
-    padding: 0%;
+header nav {
     display: none;
 }
 
-main {
-    width: 90%;
-    margin: auto;
-}
-
-footer {
-    text-align: center;
-    padding-top: 30px;
-}
-
-header div{
-    margin: 10px 0px;
-}
-
-h2 {
+header h2 {
     font-size: 12px;
     margin: auto;
     font-weight: normal;
 }
 
-ul {
+header ul {
     list-style: none;
-    padding: 0px;
+    min-width: 295px;
+    margin: 2px 0;
 }
 
-li a {
+header li a {
     text-decoration: none;
     color: black;
+    margin: 10px;
 }
 
-h3 {
+/*Etiquetas main*/
+main {
+    width: 90%;
+    margin: auto;
+}
+
+main article {
+    padding: 10px;
+}
+
+main h3 {
     font-size: 24px;
     color: #666;
 }
 
+/*Etiquetas footer*/
+footer {
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 20px;
+    background-color: white;
+}
+
+footer h6 {
+    text-align: start;
+    margin: 8px;
+    padding: 8px;
+    border-top: solid 1px #ebebeb;
+    color: #666;
+    width: 100%;
+}
+
+/*Clases en main*/
 .tarjeta {
     width: 224px;
     height: 280px;
@@ -95,14 +111,13 @@ h3 {
 
 .precio {
     font-size: 18px;
-    margin: 0 20px 0 0;
+    margin-right: 20px;
     width: 30%;
 }
 
 .descuento {
     color: #39b54a;
     font-size: 16px;
-    margin: 0px;
     width: 70%;
 }
 
@@ -110,17 +125,19 @@ h3 {
     color: #666;
     font-size: 16px;
     margin: 10px 0px;
-    display: none;
     position: relative;
     top: -30px;
+    display: none;
 }
 
+/*Clases en footer*/
 .img-footer {
     width: 2em;
-    margin-bottom: 10px;
+    margin: 10px 0;
     color: #1259c3;;
 }
 
+/*ID en header*/
 #navbar-top {
     display: flex;
     flex-wrap: wrap;
@@ -161,12 +178,44 @@ h3 {
     padding: 15px 0px;
     border-radius: 5px;
     text-align: center;
-    margin: auto;
+    margin: 15px auto;
 }
 
+#navbar-bottom {
+    display: none;
+    margin: 15px;
+}
+
+#lista-izquierda {
+    width: 50%;
+    display: flex;
+}
+
+#lista-derecha {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+
+/*ID en section*/
+#banner {
+    width: 100%;
+}
+
+/*Media query para Tablet*/
 @media (min-width: 361px) {
-    nav {
+    header nav {
         display: block;
+    }
+    
+    header h2 {
+        width: 20%;
+    }
+
+    main article {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
 
     .tarjeta {
@@ -178,15 +227,55 @@ h3 {
         display: block;
     }
 
+    #navbar-top {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    #logo {
+        align-self: center;
+        width: 40%;
+    }
+
+    #busqueda {
+        align-self: center;
+        width: 40%;
+    }
+
+    #navbar-bottom {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    #lista-derecha {
+        align-self: flex-end;
+    }
+
     #burger-menu {
         display: none;
     }
-
 }
 
+/*Media query para Desktop*/
 @media (min-width: 769px) {
-    nav {
+    header nav {
         display: block;
+    }
+
+    main article {
+        display: flex;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    footer section {
+        width: 33%;
     }
 
     .tarjeta {
@@ -198,10 +287,6 @@ h3 {
         display: block;
     }
 
-    #burger-menu {
-        display: none;
-    }
-
     #navbar-top {
         display: flex;
         flex-wrap: wrap;
@@ -209,12 +294,21 @@ h3 {
 
     #logo {
         align-self: center;
-        width: 134px;
-        height: 34px;
+        width: 200px;
+        height: 80px;
     }
 
     #busqueda {
-        width: 590px;
-        height: 39;
+        align-self: center;
+        width: 30%;
+    }
+
+    #navbar-bottom {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    #burger-menu {
+        display: none;
     }
 }
