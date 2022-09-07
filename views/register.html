@@ -14,10 +14,10 @@
         <div id="navbar-top">
             <img src="images/logo-mercado-liebre.svg" alt="Logo" id="logo">
 
-            <div id="busqueda">
+            <form id="busqueda">
                 <input type="text" placeholder="Buscar productos, marcas" id="busqueda-texto">
                 <button id="busqueda-boton"><i class="fas fa-search"></i></button>
-            </div>
+            </form>
 
             <h2>
                 <i class="fas fa-hand-holding-usd"></i>
@@ -58,20 +58,20 @@
 
     <main>
         <form action="">
-            <input type="text" placeholder="Nombre y apellido">
-            <input type="text" placeholder="Nombre de usuario">
-            <input type="email" placeholder="E-mail">
+            <input type="text" placeholder="Nombre y apellido" minlength="3" required>
+            <input type="text" placeholder="Nombre de usuario" minlength="3" required>
+            <input type="email" placeholder="E-mail" required>
             <h4>Fecha de nacimiento</h4>
-            <input type="date">
-            <input type="text" placeholder="Domicilio">
+            <input type="date" required>
+            <input type="text" placeholder="Domicilio" minlength="3" required>
             <h4>Perfil del usuario</h4>
             <div class="radio">
-                <input type="radio" id="comprador" name="perfil" value="comprador">
-                <label for="comprador" id="labelComprador">Comprador</label>
+                <input type="radio" id="comprador" name="perfil" value="comprador" checked>
+                <label for="comprador">Comprador</label>
             </div>
             <div class="radio">
                 <input type="radio" id="vendedor" name="perfil" value="vendedor">
-                <label for="vendedor" id="labelVendedor">Vendedor</label>
+                <label for="vendedor">Vendedor</label>
             </div>
             <h4>Intereses</h4>
             <div class="contenedorCheckbox">
@@ -83,10 +83,10 @@
             </div>
             <h4>Foto de usuario</h4>
             <input type="file" accept="image/.png, .jpeg, .jpg">
-            <input type="password" placeholder="Contraseña">
-            <input type="password" placeholder="Confirmar contraseña">
-            <input type="reset" id="botonReset">
-            <button id="botonEnviar"><a href="./" >Enviar</a></button>
+            <input type="password" placeholder="Contraseña" minlength="8" required>
+            <input type="password" placeholder="Confirmar contraseña" minlength="8" required>
+            <input type="reset" class="botonForm">
+            <button class="botonForm"><a href="./" >Enviar</a></button>
         </form>
     </main>
 
