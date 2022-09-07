@@ -32,7 +32,7 @@ header ul {
     margin: 2px 0;
 }
 
-header li a {
+a {
     text-decoration: none;
     color: black;
     margin: 10px;
@@ -51,6 +51,29 @@ main article {
 main h3 {
     font-size: 24px;
     color: #666;
+}
+
+main h4 {
+    margin: 5px;
+    width: 100%;
+}
+
+main form {
+    padding: 10px 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main label {
+    margin: 5px;
+}
+
+main input {
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px auto;
+    width: 100%;
 }
 
 /*Etiquetas footer*/
@@ -78,6 +101,10 @@ footer h6 {
     background-color: white;
 }
 
+.tarjeta:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
 .imagenTarjeta {
     width: 224px;
     height: 224px;
@@ -101,6 +128,11 @@ footer h6 {
     position: relative;
     left: 150px;
     top: -30px;
+    transition: transform 1s;
+}
+
+.fa-truck:hover {
+    transform: rotateZ(-90deg);
 }
 
 .valor-producto {
@@ -130,11 +162,27 @@ footer h6 {
     display: none;
 }
 
+.radio {
+    display: flex;
+    width: 50%; 
+}
+
+.contenedorCheckbox {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    text-align: center;
+}
+
 /*Clases en footer*/
 .img-footer {
     width: 2em;
     margin: 10px 0;
-    color: #1259c3;;
+    color: #1259c3;
+}
+
+.img-footer:hover {
+    color:  #03264C;
 }
 
 /*ID en header*/
@@ -202,6 +250,47 @@ footer h6 {
     width: 100%;
 }
 
+/*ID en main*/
+#comprador {
+    width: 20%;
+}
+
+#labelComprador {
+    width: 80%;
+}
+
+#vendedor {
+    width: 20%;
+}
+
+#labelVendedor {
+    width: 80%;
+}
+
+#botonReset {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#botonReset:hover {
+    background-color: #1259c3;
+}
+
+#botonEnviar {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#botonEnviar:hover {
+    background-color: #1259c3;
+}
+
 /*Media query para Tablet*/
 @media (min-width: 361px) {
     header nav {
@@ -216,15 +305,6 @@ footer h6 {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-    }
-
-    .tarjeta {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-        height: 320px;
-    }
-    
-    .producto{
-        display: block;
     }
 
     #navbar-top {
@@ -279,11 +359,14 @@ footer h6 {
     }
 
     .tarjeta {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
         height: 320px;
     }
 
-    .producto{
+    .tarjeta:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .tarjeta:hover .producto{
         display: block;
     }
 
