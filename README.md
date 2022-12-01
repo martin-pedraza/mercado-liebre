@@ -2,7 +2,7 @@
 
 Mercado liebre es la primer pagina desarrollada con el fin de aplicar los conceptos de HTML y CSS, y buscando una vista responsive. Intenta simular el diseño de la pagina de <a href="https://www.mercadolibre.com.ar/">Mercado Libre</a> y le agrega algunos formularios. 
 
-El deploy fue hecho a traves de Heroku. Y la direccion de la pagina es <a href="https://mercado-liebre-flex.herokuapp.com/">mercado-liebre-flex.herokuapp.com/</a>
+El deploy fue hecho a traves de Cyclic. Y la direccion de la pagina es <a href="https://powerful-frock-deer.cyclic.app/">powerful-frock-deer.cyclic.app//</a>
 
 ## Instalación
 
